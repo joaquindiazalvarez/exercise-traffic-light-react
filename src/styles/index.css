@@ -10,3 +10,32 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.tlTop{
+    background: black;
+    width: 20px;
+    height: 70px;
+    margin: auto;
+    color: white;
+}
+.tlBody{
+    background: black;
+    width: 200px;
+    height: 500px;
+    margin: auto;
+    display: block;
+}
+.light{
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin: auto;
+}
+.red{
+    background: red;
+}
+.yellow{
+    background: yellow;
+}
+.green{
+    background: green;
+}
