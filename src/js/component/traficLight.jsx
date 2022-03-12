@@ -39,30 +39,34 @@ export function TraficLight() {
 					}
 					onClick={() => setColor("purple")}></div>
 			</div>
-			<button
-				type="button"
-				class="btn btn-success"
-				onClick={() =>
-					color === "red"
-						? setColor("yellow")
-						: color === "yellow"
-						? setColor("green")
-						: color === "purple"
-						? setColor("red")
-						: hidden === "yes"
-						? setColor("red")
-						: setColor("purple")
-				}>
-				Change color
-			</button>
-			<button
-				type="button"
-				class="btn btn-success"
-				onClick={() =>
-					hidden === "yes" ? change("no") : change("yes")
-				}>
-				Purple
-			</button>
+			<br />
+			<div className="text-center">
+				<button
+					type="button"
+					className="btn btn-success text-center m-3"
+					onClick={() =>
+						color === "red"
+							? setColor("yellow")
+							: color === "yellow"
+							? setColor("green")
+							: color === "purple"
+							? setColor("red")
+							: hidden === "yes"
+							? setColor("red")
+							: setColor("purple")
+					}>
+					Change color
+				</button>
+				<br />
+				<button
+					type="button"
+					className="btn btn-success text-center"
+					onClick={() =>
+						hidden === "yes" ? change("no") : change("yes")
+					}>
+					Purple
+				</button>
+			</div>
 		</div>
 	);
 }
